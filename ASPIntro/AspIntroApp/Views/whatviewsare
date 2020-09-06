@@ -1,0 +1,12 @@
+﻿well - view layer is sligtly different from what we get used to ;)
+this time instead of just regular cs class we are using html pages integrated
+with quite usefull technology called Razor which enable us injecting c# code between 
+html tags. To discover more read about razor at general, then look what is the purpose of _ViewImports and ViewStart files ;)
+
+https://www.tutorialsteacher.com/mvc/razor-syntax
+
+Also, look how We are able to anchor existing controllers from the views 
+perspective (look for specifics tags in a html element ;) this is done with a help 
+of so called html helpers
+
+https://www.tutorialsteacher.com/mvc/html-helpers

@@ -1,0 +1,37 @@
+﻿@using System
+@model List<TimelineModel>
+
+@{
+    ViewData["Title"] = "Timeline";
+}
+
+
+@section AdditionalStyles {
+    <link rel="stylesheet" href="~/css/timeline.css" />
+}
+
+<div class="text-center border-bottom border-danger">
+    <h1 class="display-4">Hello, fellow codecooler! Its @DateTime.Now - so it's high time to learn some ASP.NET</h1>
+</div>
+
+
+<div class="container h-100">
+    <div class="timeline">
+        <ul class="timeline_list">
+            @foreach (var timelineElement in @Model) 
+            { 
+            <li class="timeline_element">
+                <div class="timeline_div">
+                    <p>@timelineElement.Order</p>
+                    <br />
+                </div>
+                <div class="timeline_content">
+                    <p>@timelineElement.Content</p>
+                </div>
+
+            </li>
+            }
+        </ul>
+    </div>
+</div>
+

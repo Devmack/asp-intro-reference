@@ -1,0 +1,6 @@
+﻿As you know, we can build web app based on MVC pattern 
+Controllers in asp. net core are responsible for handling specific actions on specific
+http request methods and sending the result to a view/front section of app 
+
+for more, read 
+https://www.tutorialsteacher.com/mvc/mvc-controller

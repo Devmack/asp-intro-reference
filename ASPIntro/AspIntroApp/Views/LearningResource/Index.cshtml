@@ -1,0 +1,31 @@
+﻿@model List<LearningResourceModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome in learning resources</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row ">
+        @foreach (var resource in Model)
+        {
+            <div class="col border border-danger m-3">
+                <h1>@resource.Name</h1>
+                <h3><a href="@resource.URL">LINK</a></h3>
+                <p>@resource.Description</p>
+                <br />
+                <h3>@resource.Category.ToString()</h3>
+                <br />
+                <div class="container-fluid d-inline-flex p-2">
+                    @for (int i = 0; i < resource.Difficulty; i++)
+                    {
+                    <p>@Html.Raw("&#9734;")</p>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

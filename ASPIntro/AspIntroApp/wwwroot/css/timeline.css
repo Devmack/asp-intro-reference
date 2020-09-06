@@ -1,0 +1,33 @@
+﻿ul 
+{
+    list-style:none;
+    padding-top:20px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.timeline_list li {
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-color: #db3e45;
+}
+
+.timeline_div p {
+    font-size: 25px;
+    font-weight:800;
+    
+}
+
+.timeline_list li:nth-child(2n+1) {
+    border-left: 1px solid;
+    border-color: #db3e45;
+}
+
+.timeline_list li:nth-child(2n) {
+    border-right: 1px solid;
+    text-align: right;
+    border-color: #db3e45;
+}
+

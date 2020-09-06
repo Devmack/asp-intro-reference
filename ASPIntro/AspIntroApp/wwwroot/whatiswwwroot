@@ -1,0 +1,11 @@
+﻿wwwroot is a root directory by convention for all static web files
+if you start asp .net core application from blank page, creating normal directory
+and naming it "wwwroot" will change the icon to a one in the current form. 
+
+We can use static resources within our controllers and views without 
+any additional code if we configure our project properly 
+
+For more info on wwwroot visit 
+https://www.tutorialsteacher.com/core/aspnet-core-wwwroot
+or 
+https://docs.microsoft.com/en-gb/aspnet/core/fundamentals/static-files?view=aspnetcore-3.1
